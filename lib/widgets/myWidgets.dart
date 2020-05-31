@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-
+//This is where i clipped my container
 
 class Myclipper extends CustomClipper<Path> {
   @override
@@ -9,10 +9,10 @@ class Myclipper extends CustomClipper<Path> {
     var path =  Path();
     path.lineTo(0.0,  size.height - 40);
     path.quadraticBezierTo(
-      size.width/4, size.height, size.width/2,size.height);
+    size.width/4, size.height, size.width/2,size.height);
 
-      path.quadraticBezierTo(
-      size.width - (size.width/4), size.height, size.width,size.height - 40);
+    path.quadraticBezierTo(
+    size.width - (size.width/4), size.height, size.width,size.height - 40);
 
     path.lineTo(size.width, 0.0);
     path.close();
